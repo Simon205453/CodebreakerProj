@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Base64;
-import java.util.Scanner;
 
 public class AltEncoder {
     public static String encodedString;
@@ -22,20 +21,4 @@ public class AltEncoder {
         System.out.println("Decoded string: " + decodedString);
         return decodedString;
     }
-/*
-        System.out.println("Given string is: " + givenString + "\n Program will now encrypt");
-        int givenStringLenght = givenString.length();
-        givenString = givenString.toLowerCase();
-*/
-
-
-
-/*
-        for(int i = 0; i < givenStringLenght; i++){
-            givenString.charAt(i);
-
-        }
-*/
-
-
 }

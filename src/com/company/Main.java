@@ -20,13 +20,15 @@ public class Main {
                 System.out.println("Invalid String input \n try again.");
             }
         } while (!checkIfStringIsValid(givenString));
-        //Negating methodcall because loop runs while true, and i only want it to loop when its not valid (poor method name)
+        //Negating methodcall because loop runs while true, and i only want it to loop when its NOT valid (poor method name)
 
         System.out.println("Do you want to use Caesar Encoder/Decoder or alternative Encoder/Decoder?\n Type: \n 1 - Caesar \n 2 - Alternative");
         int chosenCypher = scanner.nextInt();
+        //first layer of if statement for which encoder to use
         if (chosenCypher == 1) {
             System.out.println("You have chosen Caesar, now would you like your string encoded or decoded? \n Type: \n 1 - Encode \n 2 - Decode");
             int encodeOrDecode = scanner.nextInt();
+            //second layer of if statement for whether user chooses to encode or decode
             if (encodeOrDecode == 1) {
                 cypheredString = CaesarEncoder.ceasarEncode(givenString);
                 System.out.println("Encoded string: " + cypheredString);
